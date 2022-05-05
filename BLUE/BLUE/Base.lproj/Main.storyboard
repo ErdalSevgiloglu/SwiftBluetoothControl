@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BLUE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfa-uT-qfF">
+                                <rect key="frame" x="36" y="419" width="350" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="inF-mq-1dL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="info" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRP-Ka-j2L">
+                                <rect key="frame" x="20" y="44" width="374" height="352.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="352.5" id="htm-Z1-wpn"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVU-a4-vs8">
+                                <rect key="frame" x="234" y="495" width="90" height="44.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="MXi-Cz-CwD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sent data">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sentButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Enu-ot-ioN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqM-bN-WMG">
+                                <rect key="frame" x="77" y="501" width="95" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear info">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clearButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S8j-W8-9dT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aVU-a4-vs8" secondAttribute="trailing" constant="90" id="0kX-hw-la5"/>
+                            <constraint firstItem="LRP-Ka-j2L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5Km-mY-5CJ"/>
+                            <constraint firstItem="aVU-a4-vs8" firstAttribute="top" secondItem="cfa-uT-qfF" secondAttribute="bottom" constant="28" id="94K-tP-LzB"/>
+                            <constraint firstItem="QqM-bN-WMG" firstAttribute="baseline" secondItem="aVU-a4-vs8" secondAttribute="baseline" id="bEp-5M-OdN"/>
+                            <constraint firstItem="QqM-bN-WMG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="fH4-bL-JTu"/>
+                            <constraint firstItem="LRP-Ka-j2L" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iC1-CS-fkx"/>
+                            <constraint firstItem="cfa-uT-qfF" firstAttribute="top" secondItem="LRP-Ka-j2L" secondAttribute="bottom" constant="22.5" id="pzO-nw-IDj"/>
+                            <constraint firstItem="aVU-a4-vs8" firstAttribute="leading" secondItem="QqM-bN-WMG" secondAttribute="trailing" constant="62" id="sib-Eg-9mZ"/>
+                            <constraint firstItem="LRP-Ka-j2L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v0A-3n-cQY"/>
+                            <constraint firstItem="cfa-uT-qfF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="xAU-yx-zFv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cfa-uT-qfF" secondAttribute="trailing" constant="28" id="yFY-rS-Od4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TxTextField" destination="cfa-uT-qfF" id="cAF-mg-le2"/>
+                        <outlet property="clearInfoButton" destination="QqM-bN-WMG" id="Fws-Xs-cnj"/>
+                        <outlet property="infoText" destination="LRP-Ka-j2L" id="wfE-HO-QTE"/>
+                        <outlet property="sentButton" destination="aVU-a4-vs8" id="9ab-4g-Cyk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
